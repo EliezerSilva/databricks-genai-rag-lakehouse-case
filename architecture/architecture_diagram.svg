@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520">
+  <rect width="1100" height="520" fill="#ffffff"/>
+  <style>
+    .box { fill:#f3f6fb; stroke:#2f5597; stroke-width:2; rx:12; }
+    .title { font-family: Arial, sans-serif; font-size:18px; font-weight:700; fill:#1f2937; }
+    .text { font-family: Arial, sans-serif; font-size:14px; fill:#374151; }
+    .arrow { stroke:#4b5563; stroke-width:2; marker-end:url(#arrowhead); }
+  </style>
+  <defs><marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#4b5563"/></marker></defs>
+  <text x="40" y="40" class="title">Databricks GenAI RAG Lakehouse Case</text>
+  <text x="40" y="65" class="text">Data Engineering foundation for governed GenAI, RAG, embeddings and semantic search</text>
+
+  <rect x="40" y="110" width="160" height="95" class="box"/>
+  <text x="65" y="140" class="title">Documents</text>
+  <text x="60" y="165" class="text">Markdown / TXT</text>
+  <text x="60" y="185" class="text">Synthetic corporate docs</text>
+
+  <rect x="250" y="110" width="160" height="95" class="box"/>
+  <text x="295" y="140" class="title">Bronze</text>
+  <text x="270" y="165" class="text">Raw content</text>
+  <text x="270" y="185" class="text">Hash + metadata</text>
+
+  <rect x="460" y="110" width="160" height="95" class="box"/>
+  <text x="505" y="140" class="title">Silver</text>
+  <text x="480" y="165" class="text">Clean text</text>
+  <text x="480" y="185" class="text">Chunking + quality</text>
+
+  <rect x="670" y="110" width="160" height="95" class="box"/>
+  <text x="720" y="140" class="title">Gold</text>
+  <text x="690" y="165" class="text">Knowledge base</text>
+  <text x="690" y="185" class="text">Governed content</text>
+
+  <rect x="880" y="110" width="160" height="95" class="box"/>
+  <text x="915" y="140" class="title">Vector Index</text>
+  <text x="905" y="165" class="text">TF-IDF local</text>
+  <text x="905" y="185" class="text">AI Search target</text>
+
+  <rect x="350" y="305" width="170" height="95" class="box"/>
+  <text x="405" y="335" class="title">RAG API</text>
+  <text x="375" y="360" class="text">Question</text>
+  <text x="375" y="380" class="text">Retrieved sources</text>
+
+  <rect x="580" y="305" width="170" height="95" class="box"/>
+  <text x="620" y="335" class="title">Audit</text>
+  <text x="605" y="360" class="text">Score + latency</text>
+  <text x="605" y="380" class="text">Trace + status</text>
+
+  <rect x="800" y="305" width="170" height="95" class="box"/>
+  <text x="845" y="335" class="title">Evaluation</text>
+  <text x="825" y="360" class="text">Expected source</text>
+  <text x="825" y="380" class="text">Hit rate</text>
+
+  <line x1="200" y1="157" x2="250" y2="157" class="arrow"/>
+  <line x1="410" y1="157" x2="460" y2="157" class="arrow"/>
+  <line x1="620" y1="157" x2="670" y2="157" class="arrow"/>
+  <line x1="830" y1="157" x2="880" y2="157" class="arrow"/>
+  <line x1="960" y1="205" x2="470" y2="305" class="arrow"/>
+  <line x1="520" y1="352" x2="580" y2="352" class="arrow"/>
+  <line x1="750" y1="352" x2="800" y2="352" class="arrow"/>
+
+  <text x="40" y="470" class="text">Target Databricks: Delta Lake + Unity Catalog + Workflows + MLflow + AI Search + Model Serving</text>
+</svg>

@@ -1,0 +1,9 @@
+[project]
+name = "databricks-genai-rag-lakehouse-case"
+version = "0.1.0"
+description = "Data Engineering case for GenAI RAG using Lakehouse architecture"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

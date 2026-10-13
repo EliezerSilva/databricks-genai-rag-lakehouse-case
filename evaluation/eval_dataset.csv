@@ -1,0 +1,5 @@
+question,expected_source
+Como o Unity Catalog ajuda na governança de IA?,05_unity_catalog_ia.md
+Quais metadados devem existir na base Gold para RAG?,06_contrato_dados_rag.md
+Como funciona um fluxo RAG corporativo?,04_rag_operacional.md
+Quais regras de qualidade são importantes para dados usados por IA?,03_data_quality_playbook.md

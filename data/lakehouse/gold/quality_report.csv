@@ -1,0 +1,7 @@
+rule_id,severity,passed,failed_count,description,evaluated_at
+DOC_NOT_EMPTY,CRITICAL,True,0,Chunk content cannot be empty,2026-10-13T12:15:24.717973+00:00
+CONTENT_HASH_PRESENT,CRITICAL,True,0,Every chunk must have content hash,2026-10-13T12:15:24.718459+00:00
+CHUNK_MIN_SIZE,MEDIUM,True,0,Chunks should have at least 8 words,2026-10-13T12:15:24.718661+00:00
+NO_DUPLICATE_CHUNK,CRITICAL,True,0,Duplicate chunks cannot be published,2026-10-13T12:15:24.718886+00:00
+VALID_SENSITIVITY_LEVEL,CRITICAL,True,0,Sensitivity level must be valid,2026-10-13T12:15:24.719361+00:00
+SOURCE_METADATA_PRESENT,MEDIUM,True,0,Source metadata must be present,2026-10-13T12:15:24.720944+00:00

@@ -1,0 +1,28 @@
+resources:
+  jobs:
+    genai_rag_lakehouse_case:
+      name: genai-rag-lakehouse-case
+      tasks:
+        - task_key: bronze_ingestion
+          notebook_task:
+            notebook_path: /Repos/user/databricks-genai-rag-lakehouse-case/notebooks/01_ingest_documents
+        - task_key: silver_chunking
+          depends_on:
+            - task_key: bronze_ingestion
+          notebook_task:
+            notebook_path: /Repos/user/databricks-genai-rag-lakehouse-case/notebooks/02_extract_clean_chunk
+        - task_key: gold_publish
+          depends_on:
+            - task_key: silver_chunking
+          notebook_task:
+            notebook_path: /Repos/user/databricks-genai-rag-lakehouse-case/notebooks/03_quality_and_gold
+        - task_key: embeddings
+          depends_on:
+            - task_key: gold_publish
+          notebook_task:
+            notebook_path: /Repos/user/databricks-genai-rag-lakehouse-case/notebooks/04_generate_embeddings
+        - task_key: rag_demo
+          depends_on:
+            - task_key: embeddings
+          notebook_task:
+            notebook_path: /Repos/user/databricks-genai-rag-lakehouse-case/notebooks/06_rag_query_demo
